@@ -16,14 +16,14 @@ import org.eclipse.paho.client.mqttv3.*;
 public class MQTTPublisher {
 
     // the (only) MQTT topic of this example
-    private static final String TOPIC = "uba/Level";
+    private static final String TOPIC = "Sensor/Receive";
 
     // init the client
     private MqttClient client;
 
     /**
      * Constructor. It generates a client id and instantiate the MQTT client.
-     */
+     */	
     public MQTTPublisher() {
         // the broker URL
         String brokerURL = "tcp://mqtt.eclipseprojects.io:1883";

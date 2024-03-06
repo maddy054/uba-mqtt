@@ -49,7 +49,7 @@ public class MQTTSubscriber {
             mqttClient.connect();
 
             //Subscribe to all subtopics of home
-            final String topic = "uba/Level";
+            final String topic = "Sensor/Level";
             mqttClient.subscribe(topic);
 
             System.out.println("The subscriber is now listening to " + topic + "...");
