@@ -1,10 +1,8 @@
-package utilities;
+package models;
 
-public class Tank extends Location{
+public class Location {
+	
 	private int locationId;
-	private long capacity;
-	private int height;
-	private long waterAvailability;
 	private String location;
 	private String locationName;
 	private String locationType;
@@ -17,7 +15,12 @@ public class Tank extends Location{
 	public void setProjectId(int projectId) {
 		this.projectId = projectId;
 	}
-
+	public int getLocationId() {
+		return locationId;
+	}
+	public void setLocationId(int locationId) {
+		this.locationId = locationId;
+	}
 	public String getLocation() {
 		return location;
 	}
@@ -41,30 +44,6 @@ public class Tank extends Location{
 	}
 	public void setDescription(String description) {
 		this.description = description;
-	}
-	public int getLocationId() {
-		return locationId;
-	}
-	public void setLocationId(int locationId) {
-		this.locationId = locationId;
-	}
-	public long getCapacity() {
-		return capacity;
-	}
-	public void setCapacity(long capacity) {
-		this.capacity = capacity;
-	}
-	public int getHeight() {
-		return height;
-	}
-	public void setHeight(int height) {
-		this.height = height;
-	}
-	public long getWaterAvailability() {
-		return waterAvailability;
-	}
-	public void setWaterAvailability(long waterAvailability) {
-		this.waterAvailability = waterAvailability;
 	}
 
 }

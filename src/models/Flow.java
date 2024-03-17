@@ -1,4 +1,4 @@
-package utilities;
+package models;
 
 public class Flow {
 	private int connectionId;

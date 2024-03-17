@@ -1,9 +1,17 @@
-package utilities;
+package models;
 
 public class LineConnection {
 	private int connectionId;
 	private int fromLocation;
 	private int toLocation;
+	private int projectId;
+	
+	public int getProjectId() {
+		return projectId;
+	}
+	public void setProjectId(int projectId) {
+		this.projectId = projectId;
+	}
 	public int getConnectionId() {
 		return connectionId;
 	}

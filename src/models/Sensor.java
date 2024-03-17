@@ -1,10 +1,10 @@
-package utilities;
+package models;
 
 public class Sensor {
 	private int locationId;
 	private long time;
-	private double value;
-	private String parameter;
+	private String value;
+	private int sensorType;
 	public int getLocationId() {
 		return locationId;
 	}
@@ -17,17 +17,17 @@ public class Sensor {
 	public void setTime(long time) {
 		this.time = time;
 	}
-	public double getValue() {
+	public String getValue() {
 		return value;
 	}
-	public void setValue(double value) {
-		this.value = value;
+	public void setValue(String string) {
+		this.value = string;
 	}
-	public String getParameter() {
-		return parameter;
+	public int getParameter() {
+		return sensorType;
 	}
-	public void setParameter(String parameter) {
-		this.parameter = parameter;
+	public void setParameter(int parameter) {
+		this.sensorType = parameter;
 	}
 	
 }
